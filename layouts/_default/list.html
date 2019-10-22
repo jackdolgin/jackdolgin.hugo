@@ -1,0 +1,21 @@
+{{ define "main" }}
+<br><br>
+<h1>{{ .Title }}</h1>
+<br>
+{{ range .Pages.ByPublishDate.Reverse }}
+<p>
+  <a class="font-125" href="{{ .Permalink }}">{{ .Title }}</a>
+  <br>
+  {{ partial "date-only.html" . }}
+  <br>
+  {{ .Summary }}
+</p>
+  {{ if .Truncated }}
+  <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+  <div>
+      <a href="{{ .RelPermalink }}">Read More…</a>
+  </div>
+{{ end }}
+<br><br>
+{{ end }}
+{{ end }}

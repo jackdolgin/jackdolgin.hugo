@@ -1,0 +1,21 @@
+{{- if $.Site.Params.fontsUseGoogleApis }}
+    {{ partial `head.fonts.googleapis.html` . -}}
+{{- end }}
+<!doctype html>
+{{ $lang := .Site.Language.Lang | default "en" }}
+<html lang="{{ $lang }}" class="h-100">
+  {{ partial "head.html" . }}
+  <br>
+  <body class="d-flex flex-column h-100">
+    {{ partial "title.html" . }}
+    {{ partial "nav.html" . }}
+    <div class="container">
+      <main id="main">
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "script.html" . }}
+    {{ partial "google-analytics-async.html" . }}
+  </body>
+</html>

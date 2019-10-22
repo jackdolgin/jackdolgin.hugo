@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<link rel="stylesheet/less" type="text/css" href="css/main.less" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.terminal/1.4.3/js/jquery.terminal.js"></script>
+<script type="text/javascript" src="js/shell.js"></script>
+<script type="text/javascript" src="js/cli.js"></script>
+
+<div class="terminal-window">
+  <header>
+    <div class="button red"></div>
+    <div class="button yellow"></div>
+    <div class="button green"></div>
+  </header>
+  <div id="terminal">
+      <p><span class="blue">Hi, welcome to my website! </span> - Ignore this box and click around like most websites, or feel free to navigate the site by typing using the following instructions.</p>
+        <p class="hidden">
+        <span class="prompt">
+          <span class="home">type `start`</span>
+          <span class="tick">❯</span>
+        </span>
+        <span contenteditable="true" class="input"></span>
+      </p>
+  </div>
+</div>
+
+{{ end }}

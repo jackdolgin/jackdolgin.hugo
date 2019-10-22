@@ -1,0 +1,17 @@
+{{ define "main" }}
+<br><br>
+<h1>{{ .Title }}</h1>
+{{ partial "date-only.html" . }}
+<br><br>
+{{ .Content }}
+<br><br>
+<div id="bottoms-border" class="container">
+  <aline id="nav" class="nav justify-content-center">
+  </aline>
+</div>
+
+<br><br>
+<h2>Post Tags</h2>
+{{ partial "tags-only.html" . }}
+<!-- {{ partial "comments.html" $ }} -->
+{{ end }}

@@ -1,0 +1,156 @@
+---
+geometry: "left=.3cm,right=4.6cm,top=3cm,bottom=4.5cm"
+
+output:
+  pdf_document:
+    latex_engine: xelatex
+    extra_dependencies: ["xcolor", "hyperref", "fontspec", "array", "setspace", "longtable", "datetime", "fancyhdr", "ifthen"]
+    pandoc_args: "--pdf-engine-opt=--enable-write18"
+header-includes:
+  \newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \pagestyle{fancy}
+  \fancyfoot[LE,RO]{\ifthenelse{\value{page}=1}{\monthyeardate\today}{\pagestyle{empty}}}
+  
+---
+\setmainfont[Color={444444}]{Humanist 521 Light BT}
+\makeatletter
+\def\Hy@href#{\addfontfeatures{Color=047464}\hyper@normalise\href@}
+
+\newfontfamily\MyRed[Color={a41414}]{Gill Sans Nova Cn Bold}
+\def\sectitle{\MyRed \fontsize{12}{10} \selectfont}
+\newfontfamily\MyName [Color={444444}]{Adobe Garamond Pro Bold}
+
+\def\jmp{[.5cm]}
+
+\def\ind{\hspace{.37cm} \hangindent=.45cm }
+
+\def\HeadSpace{.15\textwidth}
+
+\def\websiteURL{https://jackdolgin.org}
+\def\posterExtension{/data/presentations/}
+
+
+
+\begin{longtable}
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.6\textwidth} >{\raggedleft\arraybackslash}p{.25\textwidth}}
+          & \begingroup\MyName \fontsize{20}{10} \selectfont Jack Dolgin \endgroup  &
+          \\
+          & Center for Cognitive Neuroscience                                       & \href{https://twitter.com/jbdolg}{@jbdolg}
+          \\
+          & LSRC Box 90999                                                          & \href{mailto:jack.dolgin@duke.edu}{jack.dolgin@duke.edu}
+          \\
+          & Duke University, Durham, NC 27708                                       & \href{\websiteURL}{jackdolgin.org}
+\end{longtable}
+
+
+
+\setmainfont[Color={444444}]{Adobe Garamond Pro}
+
+
+
+\begin{longtable}
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.6\textwidth} >{\raggedleft\arraybackslash}p{.25\textwidth}}
+\begingroup\sectitle EDUCATION\endgroup  & Duke University                                                                                   & Durham, NC
+                                         \\
+                                         & \ind B.S., Psychology, with Distinction                                                           &
+                                         \\
+                                         & \ind Thesis: \emph{Separating the Influence of Budget and Numeric Priming on Willingness to Pay}  &            
+\end{longtable}
+ \renewcommand{\arraystretch}{1.5}
+
+
+
+\begin{longtable}
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.6\textwidth} >{\raggedleft\arraybackslash}p{.25\textwidth}}
+\begingroup\sectitle EXPERIENCE\endgroup  & Duke University                                                               & Durham, NC
+                                          \\
+                                          & \ind Lab Manager, Egner Lab                                                   & June 2018 -
+                                          \\
+                                          & \ind Research Assistant, Huettel Lab                                          & Jan. 2017 - May 2018
+                                          \\
+                                          & \ind Research Assistant, Cognitive-Behavioral Research and Treatment Program  & May 2016 - Dec. 2016
+\end{longtable}
+
+
+
+
+\begin{longtable}
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.05\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth} >{\raggedright\arraybackslash}p{0.15\textwidth}}
+\begingroup\sectitle GRANTS\endgroup  & 2019  & Interdisciplinary Behavioral Research Center Mini-Grant from Duke University (\$600)  &
+                                      \\
+                                      & 2018  & Faculty Seed Grant from Duke University, with Peter S. Whitehead and Tobias Egner (\$34,000)  &
+\end{longtable}
+
+
+
+
+\begin{longtable}
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.05\textwidth} >{\raggedright\arraybackslash}p{0.3\textwidth} >{\raggedright\arraybackslash}p{0.45\textwidth}}
+\begingroup\sectitle AWARDS\endgroup  & 2017  & \href{https://psychandneuro.duke.edu/summer-vertical-integration-program-vip}{Vertical Integration Program} \newline Duke University (\$3,500) & Selected for funding for a summer of research at Duke University before my senior year                                                                
+                                      \\
+                                      & 2016  & \href{https://library.duke.edu/research/awards/aptman}{Lowell Aptman Prize} \newline Duke University (\$1,000)                                & Awarded the best non-senior-thesis research \href{https://hdl.handle.net/10161/16739}{paper} in any subject among all Duke students
+                                      \\
+                                      & 2015  & \href{https://library.duke.edu/research/awards/holsti}{Ole R. Holsti Prize} \newline Duke University (\$1,000) & Awarded, for a \href{http://hdl.handle.net/10161/10217}{separate paper}, the best research paper in political science using primary sources among all freshmen and sophomores at Duke University
+\end{longtable}
+
+
+
+
+\begin{longtable}
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.8\textwidth}}
+\begingroup\sectitle MANUSCRIPTS\endgroup  & \textbf{In Progress}                                                                                                                                                                     \\
+                                           & Amasino, D., \textbf{Dolgin, J.}, and Huettel, S.A. Individual differences in the use of variable budget information in consumer choice. In preparation (draft available upon request).
+                                           \\
+                                           & Bejjani, C., \textbf{Dolgin, J.}, Zhang, Z., and Egner, T. (\href{https://osf.io/7jfbp/}{Preregistered Direct Replication, Stage 1 in principle acceptance at \emph{Psychological Science}}). Disentangling the roles of cue visibility and preparatory knowledge in learning cognitive control.
+                                           \\
+                                           & \textbf{Dolgin, J.}, Fiebelkorn, I.C., and Egner, T. In preparation (\href{https://jackdolgin.shinyapps.io/rhythmic_attention/}{data available via interactive Shiny app}). Monitoring multiple external locations may not induce rhythmic attention.
+\end{longtable}
+
+
+
+
+\begin{longtable}
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.8\textwidth}}
+{\begingroup\sectitle TALKS \& PRESENTATIONS\endgroup}  & \textbf{Refereed} \begin{spacing}{1.5} \par \end{spacing} Amasino, D., \textbf{Dolgin, J.}, and Huettel, S.A. (2019, June). Individual differences in the use of variable budget information in consumer choice. Talk delivered by D.A. at the 9th annual Interdisciplinary Symposium on Neuroscience, Durham, N.C.
+                                                        \\
+                                                        & Amasino, D., \textbf{Dolgin, J.}, and Huettel, S.A. (2019, May). \href{\websiteURL \posterExtension 2019pr_AmasinoDolginHuettel.pdf}{Individual differences in the use of variable budget information in consumer choice}. Poster presented by J.D. at the 31st annual meeting of the Association for Psychological Science, Washington, D.C.
+                                                        \\
+                                                        & \textbf{Dolgin, J.}, Bejjani, C., Zhang, Z., and Egner, T. (2019, May). \href{\websiteURL \posterExtension 2019pr_DolginBejjaniZhangEgner.pdf}{Disentangling the roles of cue visibility and knowledge in learning cognitive control}. Poster presented by J.D. at the 31st annual meeting of the Association for Psychological Science, Washington, D.C.
+                                                        \\
+                                                        & Zhang, Z., Bejjani, C., \textbf{Dolgin, J.}, and Egner, T. (2019, Mar.). \href{\websiteURL \posterExtension 2019pr_ZhangBejjaniDolginEgner.pdf}{Disentangling the roles of cue visibility and knowledge in learning cognitive control}. Poster presented by Z.Z. and J.D. at the 26th annual meeting of the Cognitive Neuroscience Society, San Francisco, CA.
+                                                        \\
+                                                        & Amasino, D., \textbf{Dolgin, J.}, and Huettel, S.A. (2018, Oct.). \href{\websiteURL \posterExtension 2018pr_AmasinoDolginHuettel.pdf}{Individual differences in the use of variable budget information in consumer choice}. Poster presented by D.A. at the 16th annual meeting of the Society for NeuroEconomics, Philadelphia, PA.
+                                                        \\
+                                                        & \textbf{Non-Refereed}
+                                                        \\
+                                                        & Zhang, Z., Bejjani, C., Chiu, Y.C., \textbf{Dolgin, J.}, and Egner, T. (2019, July). \href{\websiteURL \posterExtension 2019pr_ZhangBejjaniChiuDolginEgner.pdf}{Neural evidence of control state reinstatement: an fMRI study}. Poster presented by Z.Z. at the Duke Summer Undergraduate Research Showcase, Durham, NC.
+                                                        \\
+                                                        & \textbf{Dolgin, J.} (2019, May). NCAA women’s basketball as a proxy for gender differences in verbal aggression. Talk delivered by J.D. at the Duke Center for Cognitive Neuroscience Data Blitz, Chapel Hill, NC.
+                                                        \\
+                                                        & \textbf{Dolgin, J.}, Amasino, D., and Huettel, S.A. (2018, Apr.). \href{\websiteURL \posterExtension 2018pr_DolginAmasinoHuettel.pdf}{Separating the influence of budget and numeric priming on willingness to pay}. Poster presented by J.D. at the Duke Visible Thinking Poster Fair, Durham, NC.
+                                                        \\
+                                                        & \textbf{Dolgin, J.}, Amasino, D., and Huettel, S.A. (2017, July). \href{\websiteURL \posterExtension 2017pr_DolginAmasinoHuettel.pdf}{Budget’s Effect on consumers’ willingness-to-pay}. Poster presented by Dolgin at the Duke Vertical Integration Program Poster Fair, Durham, NC.
+\end{longtable}
+
+
+
+
+\begin{longtable}
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.45\textwidth}} 
+\begingroup\sectitle SIDE PROJECTS\endgroup  & \textbf{Dolgin, J.}, Whitehead, P.S., Vieth, A.Z. (In Preparation). NCAA women’s basketball reveals men as more verbally aggressive. & Foray into 50,000 basketball games with web-scraping—finishing a project idea I had to propose for Dr. Vieth’s class as an undergraduate—to complete the first observational study in adults to date on differences in verbal aggression between genders.
+                                             \\
+                                             & Butchireddygari, L., \textbf{Dolgin, J.} (2018). \href{https://www.dukechronicle.com/article/2018/01/is-greek-life-at-duke-as-homogenous-as-you-think}{Is Greek life at Duke as homogeneous as you think?} Duke Chronicle.                  & My coauthor and I collected over 30 variables on all 1,700 students in Duke’s class of 2018 to analyze trends in the demographics of members of Greek life, and we posted all our publicly-collected data to a repository and I analyzed it in an interactive \href{https://jackdolgin.shinyapps.io/GreekLifeDemographics/}{Shiny app}.
+                                            \\
+                                            & \textbf{Dolgin, J.} (2017). \href{http://dewitt.sanford.duke.edu/wp-content/uploads/2017/02/Dolgin-blog-This-week-in-Duke-History.pdf}{This Week in Duke Sports History}. Duke Chronicle.
+                                            & My work documenting a zany fact in Duke sports history for an entire year was a finalist in Duke’s annual award for a journalism project or article across all of Duke’s undergraduates, including journalism certificate students and the rest of the school.
+\end{longtable}
+
+
+
+
+\begin{longtable}
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.8\textwidth}}
+{\begingroup\sectitle SKILLS \& EXPERIENCE\endgroup}  & \href{https://github.com/search?q=language%3AR+user%3Ajackdolgin&s=indexed&type=Code}{R}, \href{https://github.com/search?q=language%3Apython+user%3Ajackdolgin&s=indexed&type=Code}{Python}, PsychoPy, fMRI, Eye Tracking (EyeLink, Tobii), Web-scraping
+\end{longtable}
