@@ -33,7 +33,7 @@ pygmentsStyle = "pygments"
     weight = 3
   [[menu.nav]]
     name = "cv [pdf]"
-    url = "/cv.pdf/"
+    url = "cv/Dolgin_Vita.pdf"
     weight = 4
   [[menu.nav]]
     name = "contact"
