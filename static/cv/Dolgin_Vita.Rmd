@@ -29,7 +29,7 @@ header-includes:
 \def\HeadSpace{.15\textwidth}
 
 \def\websiteURL{https://jackdolgin.org}
-\def\posterExtension{/data/presentations/}
+\def\posterExtension{/presentations/}
 
 
 
