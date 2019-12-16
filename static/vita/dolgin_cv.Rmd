@@ -12,7 +12,7 @@ header-includes:
   \renewcommand{\headrulewidth}{0pt}
   \pagestyle{fancy}
   \fancyfoot[LE,RO]{\ifthenelse{\value{page}=1}{\monthyeardate\today}{\pagestyle{empty}}}
-  
+
 ---
 \setmainfont[Color={444444}]{Humanist 521 Light BT}
 \makeatletter
@@ -100,12 +100,15 @@ header-includes:
 
 \begin{longtable}
 {>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.8\textwidth}}
-\begingroup\sectitle MANUSCRIPTS\endgroup  & \textbf{In Progress}                                                                                                                                                                     \\
+\begingroup\sectitle PUBLICATIONS\endgroup  & 
+                                           Bejjani, C., \textbf{Dolgin, J.}, Zhang, Z., and Egner, T. (In Press). \emph{Psychological Science}. Disentangling the roles of cue visibility and preparatory knowledge in adjusting cognitive control.
+                                           \\
+                                           & \textbf{In Progress}                                                                                             \\
                                            & Amasino, D., \textbf{Dolgin, J.}, and Huettel, S.A. Individual differences in the use of variable budget information in consumer choice. In preparation (draft available upon request).
                                            \\
-                                           & Bejjani, C., \textbf{Dolgin, J.}, Zhang, Z., and Egner, T. (\href{https://osf.io/7jfbp/}{Preregistered Direct Replication, Stage 1 in principle acceptance at \emph{Psychological Science}}). Disentangling the roles of cue visibility and preparatory knowledge in learning cognitive control.
-                                           \\
                                            & \textbf{Dolgin, J.}, Fiebelkorn, I.C., and Egner, T. In preparation (\href{https://jackdolgin.shinyapps.io/rhythmic_attention/}{data available via interactive Shiny app}). Monitoring multiple external locations may not induce rhythmic attention.
+                                           \\
+                                           & \textbf{Dolgin, J.} and Henne, P. In preparation. Statistical norms and agent's epistemic state influence causal selection in real-world animation.
 \end{longtable}
 
 
@@ -113,7 +116,7 @@ header-includes:
 
 \begin{longtable}
 {>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.8\textwidth}}
-{\begingroup\sectitle TALKS \& PRESENTATIONS\endgroup}  & \textbf{Refereed} \begin{spacing}{1.5} \par \end{spacing} Amasino, D., \textbf{Dolgin, J.}, and Huettel, S.A. (2019, June). Individual differences in the use of variable budget information in consumer choice. Talk delivered by D.A. at the 9th annual Interdisciplinary Symposium on Neuroscience, Durham, N.C.
+{\begingroup\sectitle TALKS \& PRESENTATIONS\endgroup}  & \textbf{Refereed} \begin{spacing}{1.5} \par \end{spacing} Amasino, D., \textbf{Dolgin, J.}, and Huettel, S.A. (2019, June). Individual differences in the use of variable budget information in consumer choice. Talk delivered by D.A. at the 9th annual Interdisciplinary Symposium on Neuroscience, Durham, NC.
                                                         \\
                                                         & Amasino, D., \textbf{Dolgin, J.}, and Huettel, S.A. (2019, May). \href{\websiteURL \posterExtension 2019pr_AmasinoDolginHuettel.pdf}{Individual differences in the use of variable budget information in consumer choice}. Poster presented by J.D. at the 31st annual meeting of the Association for Psychological Science, Washington, D.C.
                                                         \\
@@ -138,7 +141,7 @@ header-includes:
 
 
 \begin{longtable}
-{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.45\textwidth}} 
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.45\textwidth}}
 \begingroup\sectitle SIDE PROJECTS\endgroup  & \textbf{Dolgin, J.}, Whitehead, P.S., Vieth, A.Z. (In Preparation). NCAA women’s basketball reveals men as more verbally aggressive. & Foray into 50,000 basketball games with web-scraping—finishing a project idea I had to propose for Dr. Vieth’s class as an undergraduate—to complete the first observational study in adults to date on differences in verbal aggression between genders.
                                              \\
                                              & Butchireddygari, L., \textbf{Dolgin, J.} (2018). \href{https://www.dukechronicle.com/article/2018/01/is-greek-life-at-duke-as-homogenous-as-you-think}{Is Greek life at Duke as homogeneous as you think?} Duke Chronicle.                  & My coauthor and I collected over 30 variables on all 1,700 students in Duke’s class of 2018 to analyze trends in the demographics of members of Greek life, and we posted all our publicly-collected data to a repository and I analyzed it in an interactive \href{https://jackdolgin.shinyapps.io/GreekLifeDemographics/}{Shiny app}.
@@ -151,6 +154,16 @@ header-includes:
 
 
 \begin{longtable}
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.11\textwidth} >{\raggedright\arraybackslash}p{0.21\textwidth} >{\raggedright\arraybackslash}p{0.45\textwidth}}
+\begingroup\sectitle OTHER EXPERIENCES\endgroup  & 2019 -  & \href{https://www.techgirlz.org/}{TechGirlz} \newline Volunteer & Develop Python and R curricula that I and others in the organization teach to middle school girls.                                                                
+                                                  \\
+                                                  & 2014 - 2018  & \href{https://www.dukechronicle.com/search?a=1&au=Jack+Dolgin&ty=article}{Duke Chronicle} \newline Associate Editor & Wrote over 200 articles for the Duke student paper. I edited others’ writing, performed \href{https://www.dukechronicle.com/article/2017/04/school-vs-sports-which-really-comes-first-for-duke-athletes}{three} \href{https://www.dukechronicle.com/article/2018/01/is-greek-life-at-duke-as-homogenous-as-you-think}{data-driven} \href{https://www.dukechronicle.com/article/2018/05/are-slgs-as-diverse-as-you-think}{investigations}, covered events in 11 states, \href{https://www.dukechronicle.com/multimedia/314d8ec3-5a4c-4d22-8852-2b1e196a366b}{took} \href{https://www.dukechronicle.com/multimedia/b9c1c8cd-dc3d-4093-bfa2-0935b7d92e8c}{photos} \href{https://www.dukechronicle.com/multimedia/6dbc6250-e44c-47a0-9590-55d3245b3c90}{of} \href{https://www.dukechronicle.com/multimedia/80a554ad-1989-4fe8-a355-056560c662a3}{a} \href{https://www.dukechronicle.com/multimedia/c28b0808-3a6c-42e1-8230-e6b96dcacf33}{Trump} \href{https://www.dukechronicle.com/multimedia/c28b0808-3a6c-42e1-8230-e6b96dcacf33}{rally} \href{https://www.dukechronicle.com/multimedia/47ef3ad6-1d74-47a3-b89a-57fa6122f3b7}{the} \href{https://www.dukechronicle.com/multimedia/d1083abc-8a08-4f49-afe3-f08d91cbf53d}{day} \href{https://www.dukechronicle.com/multimedia/bdc055ca-1ee5-4190-903d-d7c5e9e4f8c6}{before} \href{https://www.dukechronicle.com/multimedia/342f3393-0f81-4cae-9100-84b976f973d6}{the} \href{https://www.dukechronicle.com/multimedia/0d29f279-568c-4e33-9260-4c4f321598cb}{election}, \href{https://www.dukechronicle.com/article/2017/10/pinning-opponents-inside-the-20-yard-line-its-harder-than-it-looks}{produced} \href{https://www.dukechronicle.com/article/2017/09/they-call-themselves-ultras-look-like-crazies}{videos}, and received the Rolly C. Miller award for ``exhibit[ing] a warmth and collegiality that brings the staff closer together."
+\end{longtable}
+
+
+
+
+\begin{longtable}
 {>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.8\textwidth}}
-{\begingroup\sectitle SKILLS \& EXPERIENCE\endgroup}  & \href{https://github.com/search?q=language%3AR+user%3Ajackdolgin&s=indexed&type=Code}{R}, \href{https://github.com/search?q=language%3Apython+user%3Ajackdolgin&s=indexed&type=Code}{Python}, PsychoPy, fMRI, Eye Tracking (EyeLink, Tobii), Web-scraping
+{\begingroup\sectitle SKILLS \& TOOLS\endgroup}  & \href{https://github.com/search?q=language%3AR+user%3Ajackdolgin&s=indexed&type=Code}{R}, \href{https://github.com/search?q=language%3Apython+user%3Ajackdolgin&s=indexed&type=Code}{Python}, PsychoPy, fMRI, Eye Tracking (EyeLink, Tobii), Web-scraping
 \end{longtable}
