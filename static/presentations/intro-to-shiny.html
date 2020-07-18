@@ -1,0 +1,809 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Intro to Shiny apps</title>
+
+		<link rel="stylesheet" href="reveal.js/css/reset.css">
+		<link rel="stylesheet" href="reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="reveal.js/css/theme/black.css">
+		<link rel="stylesheet" href="reveal.js/css/personal-signature.css"
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal.js/lib/css/atom-one-dark.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<div class="main-font">
+						<div class='main-font'>
+							An introduction to shiny apps
+						</div>
+						<div class='sub-left'>
+							Jack Dolgin
+						</div>
+					</div>
+				</section>
+				<section>
+					<section>
+						<div class="left-container">
+							<div class='main-left'>
+								What are they?
+							</div>
+							<div class='sub-left'>
+								Interactive graph/tables/pseudo-websites
+							</div>
+						</div>
+						<div class="pic-format">
+							<img src='img/yawn.gif'/>
+						</div>
+					</section>
+					<section data-background-iframe="https://shiny.john-coene.com/coronavirus/"
+					data-background-interactive>
+						<div class='overlaid-url' style="color: white;">
+							shiny.john-coene.com/coronavirus/
+						</div>
+					</section>
+					<section data-background-iframe="https://malcolmbarrett.shinyapps.io/precisely/"
+					data-background-interactive>
+						<div class='overlaid-block' style="width: 15%; top: 350px; right: 50px; padding: 10px; text-align: center;">
+							<p>Statistics</p>
+						</div>
+						<div class='overlaid-url'>
+							malcolmbarrett.shinyapps.io/precisely/
+						</div>
+					</section>
+					<section data-background-iframe="https://dgranjon.shinyapps.io/entry_level/"
+					data-background-interactive>
+						<div class='overlaid-block' style="width: 15%; top: 300px; right: 200px; padding: 10px; text-align: center;">
+							<p>Teaching</p>
+						</div>
+						<div class='overlaid-url' style="right: 1040px;">
+							dgranjon.shinyapps.io/entry_level/
+						</div>
+					</section>
+					<section data-background-iframe="https://jwyckoff.shinyapps.io/TIPIpersonality/"
+					data-background-interactive>
+						<div class='overlaid-block' style="width: 15%; top: 100px; right: 200px; padding: 10px; text-align: center;">
+							<p>Running surveys</p>
+						</div>
+						<div class='overlaid-url'>
+							jwyckoff.shinyapps.io/TIPIpersonality/
+						</div>
+					</section>
+					<section data-background-iframe="https://daattali.com/shiny/mimic-google-form/"
+					data-background-interactive>
+						<div class='overlaid-url' style='right: 1080px;'>
+							daattali.com/shiny/mimic-google-form/
+						</div>
+					</section>
+					<section data-background-iframe="https://colinquirk.shinyapps.io/shinyeyes/"
+					data-background-interactive>
+						<div class='overlaid-block' style="width: 40%; top: 200px; right: 0;">
+							<p>Upload and perform eye-tracking analyses without coding</p>
+						</div>
+						<div class='overlaid-url'>
+							colinquirk.shinyapps.io/shinyeyes/
+						</div>
+					</section>
+					<section data-background-iframe="https://electrophysiology.shinyapps.io/BacAv/"
+					data-background-interactive>
+						<div class='overlaid-block' style="width: 40%; top: 200px; right: 0;">
+							<p>Upload and analyze EEG data without coding</p>
+						</div>
+						<div class='overlaid-url'>
+							electrophysiology.shinyapps.io/BacAv/
+						</div>
+					</section>
+					<section data-background-iframe="https://pablobernabeu.shinyapps.io/Dutch-modality-exclusivity-norms/"
+					data-background-interactive>
+						<div class='overlaid-block' style="width: 40%; top: 400px; right: 0;">
+							<p>Build pseudo-websites for studies</p>
+						</div>
+						<div class='overlaid-url'>
+							pablobernabeu.shinyapps.io/Dutch-modality-exclusivity-norms/
+						</div>
+					</section>
+					<section data-background-iframe="https://rpomponio.shinyapps.io/neuro_lifespan/"
+					data-background-interactive>
+						<div class='overlaid-block' style="width: 40%; top: 150px; right: 0;">
+							<p>Analyze brain data</p>
+						</div>
+						<div class='overlaid-url'>
+							rpomponio.shinyapps.io/neuro_lifespan/
+						</div>
+					</section>
+					<section data-background-iframe="https://carolinaeuan.shinyapps.io/hcc-vis/"
+					data-background-interactive>
+						<div class='overlaid-url'>
+							carolinaeuan.shinyapps.io/hcc-vis/
+						</div>
+					</section>
+					<section data-background-iframe="https://shiny.rstudio.com/gallery/isee.html"
+					data-background-interactive>
+						<div class='overlaid-url'>
+							shiny.rstudio.com/gallery/isee.html
+						</div>
+					</section>
+				</section>
+				<section>
+					<div class="left-container">
+						<div class='main-left'>
+							You have convinced me, Jack
+						</div>
+						<div class='sub-left'>
+							Ok just tell me how to make them already
+						</div>
+					</div>
+					<div class="pic-format">
+						<img src='img/big_eyes.jpg'/>
+					</div>
+				</section>
+				<section>
+					<div class="left-container">
+						<div class='main-left'>
+							I like how you think
+						</div>
+					</div>
+					<div class="pic-format">
+						<img src='img/you_are_good.gif'/>
+					</div>
+				</section>
+				<section>
+					<div class="left-container">
+						<div class='main-left'>
+							Are there going to be memes on every slide?
+						</div>
+						<div class='sub-left'>
+							What did I sign up for?
+						</div>
+					</div>
+					<div class="pic-format">
+						<img src='img/window.png'/>
+					</div>
+				</section>
+				<section>
+					<section data-background-color="#F3F5B0">
+						<div class="main-font">
+							Really, just two parts
+						</div>
+					</section>
+					<section>
+						<div class="a-container">
+							<p>Interface</p>
+							<p>Server</p>
+						</div>
+						<div class='a-container'>
+							<iframe src="https://gallery.shinyapps.io/013-selectize/_w_aa3b0136/_w_8c716b7f/#ui_R_code" width='500' height="400"></iframe>
+							<div class='a-container'>
+								<img src='img/server_visualized.png' />
+								<img src='img/gears.gif' />
+							</div>
+						</div>
+						<div class='overlaid-url'>
+							gallery.shinyapps.io/013-selectize/_w_aa3b0136/_w_8c716b7f
+						</div>
+					</section>
+					<section>
+						<div class="a-container">
+							<p>Interface</p>
+							<p>Server</p>
+						</div>
+						<div class="a-container">
+							<iframe src="https://gallery.shinyapps.io/013-selectize/_w_aa3b0136/_w_8c716b7f/#ui_R_code" width='500' height="400"></iframe>
+							<iframe src="https://gallery.shinyapps.io/013-selectize/_w_aa3b0136/_w_8c716b7f/#server_R_code" width='500' height="400"></iframe>
+						</div>
+					</section>
+				</section>
+				<section>
+					<div class="left-container">
+						<div class='main-left'>
+							Build and learn
+						</div>
+					</div>
+					<div class="pic-format">
+						<img src='img/both.gif'/>
+					</div>
+				</section>
+				<section data-background-iframe="https://www.youtube.com/embed/Gyrfsrd4zK0?start=88&end=166"
+				data-background-interactive>
+					<div class='overlaid-url' style='right: 600px;'>
+						youtu.be/Gyrfsrd4zK0?t=96
+					</div>
+				</section>
+				<section data-background-iframe="https://shiny.rstudio.com/gallery/sliders.html"
+				data-background-interactive>
+					<div class='overlaid-url' style='right: 1080px;'>
+						shiny.rstudio.com/gallery/sliders.html
+					</div>
+				</section>
+				<section>
+					<section>
+						<div class='main-font'>Aim: Build a slider</div>
+						<img src= "img/slider.png"/>
+					</section>
+					<section>
+						<div class='main-font'>Given</div>
+						<div class='stretch-box'>
+							<pre title='untitled'><code class="hljs r" data-trim contenteditable>
+								# Hint: https://gallery.shinyapps.io/077-widget-slider/
+							</code></pre>
+						</div>
+					</section>
+					<section>
+						<div class='main-font'>Solution</div>
+						<div class='stretch-box'>
+							<pre title='ui.R'><code class="hljs r" data-trim contenteditable>
+								sliderInput("timeRange",
+								  label = "Time range to plot",
+								  min = -199,
+								  max = 598,
+								  value = c(-100, 400))
+							</code></pre>
+							<pre title='server.R'><code class="hljs r" data-trim contenteditable>
+								function(input, output){
+
+								}
+							</code></pre>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<div class='main-font'>Aim: Build a responsive app</div>
+						<img src='img/responsive_app.png'/>
+					</section>
+					<section>
+						<div class='main-font'>Given</div>
+						<div class='stretch-box'>
+							<pre title='ui.R'><code class="hljs r" data-trim contenteditable>
+								sliderInput("timeRange",
+								  label = "Time range to plot",
+								  min = -199,
+								  max = 598,
+								  value = c(-100, 400))
+							</code></pre>
+							<pre title='server.R'><code class="hljs r" data-trim contenteditable>
+								# tidyverse is already loaded for you
+								library(tidyverse)
+
+								# imports data and helper function
+								source("setup_helper.R")
+
+								function(input, output){
+								  # Delete this comment, replace
+								  # with missing line
+
+								  # This line calls ggplot(data, aes) and
+								  # other helper functions for plotting
+								  graph_setup +
+
+								    # Replace the two underscores with the
+								    # correct values
+								    coord_cartesian(xlim = _____, ____)
+
+								  }
+							</code></pre>
+							<pre title='setup_helper.R'><code class="hljs r" data-trim contenteditable>
+
+							# The dataset and most of this code are taken from https://github.com/craddm/ERPdemo/blob/master/ERPdemo/app.R
+							# You won't have to make any changes to this script
+
+							dataset <- read_csv(
+							  "https://raw.githubusercontent.com/craddm/ERPdemo/master/ERPdemo/data/levCatObjNon.csv",
+							  c("Object", "Non-Object",
+							    "Time", "Subject")) %>%
+							  mutate(
+							   Difference = Object - `Non-Object`) %>%
+							  gather(condition, amplitude,
+							  	-Time, -Subject) %>%
+							  mutate(
+							    effectType = factor(if_else(
+							      condition == "Difference", "Difference",
+								  "Main"
+							    )),
+							    condition = factor(
+							      condition,
+							      levels = c("Object", "Non-Object",
+								  	"Difference"),
+							      labels = c("Object", "Non-Object",
+								  	"Difference")
+							    )
+							  )
+
+							dataset$Subject <- factor(dataset$Subject)
+							dataset$condition <- factor(dataset$condition)
+
+
+							graph_setup <- ggplot(data = dataset,
+									      aes(Time, amplitude)) +
+							  list(
+							    scale_color_brewer(palette = "Set1"),
+							    theme_minimal(),
+							    stat_summary(
+							      data = dataset,
+							      fun = mean,
+							      geom = "line",
+							      size = 1,
+							      aes(colour = condition)
+							    ),
+							    scale_colour_discrete(
+								  limits = levels(dataset$condition)),
+							    labs(
+								  x = "Time (ms)",
+								  y = expression(paste(
+								    "Amplitude (",mu,"V)")),
+								  colour = ""),
+							    geom_vline(xintercept = 0,
+								  linetype = "dashed" ),
+							    geom_hline(yintercept = 0,
+								  linetype = "dashed"),
+							    theme(
+								 axis.text = element_text(size = 14),
+								 axis.title = element_text(size = 14),
+								 legend.text = element_text(size=14))
+							  )
+							</code></pre>
+						</div>
+					</section>
+					<section>
+						<div class='main-font'>Solution</div>
+						<div class='stretch-box'>
+							<pre title='ui.R'><code class="hljs r" data-trim contenteditable>
+								fluidPage(
+								  sliderInput("timeRange",
+								    label = "Time range to plot",
+								    min = -199,
+								    max = 598,
+								    value = c(-100, 400)),
+								  plotOutput("main_plot"))
+							</code></pre>
+							<pre title='server.R'><code class="hljs r" data-trim contenteditable>
+								# tidyverse is already loaded for you
+								library(tidyverse)
+
+								# imports data and helper function
+								source("setup_helper.R")
+
+								function(input, output){
+								  output$main_plot <- renderPlot({
+
+								    # This line calls ggplot(data, aes) and
+								    # other helper functions for plotting
+								    graph_setup +
+
+								      coord_cartesian(
+									    xlim = c(input$timeRange[1],
+										  input$timeRange[2]))
+								    })
+								  }
+
+							</code></pre>
+							<pre title='setup_helper.R'><code class="hljs r" data-trim contenteditable>
+
+								# The dataset and most of this code are taken from https://github.com/craddm/ERPdemo/blob/master/ERPdemo/app.R
+								# You won't have to make any changes to this script
+
+								dataset <- read_csv(
+								  "https://raw.githubusercontent.com/craddm/ERPdemo/master/ERPdemo/data/levCatObjNon.csv",
+								  c("Object", "Non-Object",
+								    "Time", "Subject")) %>%
+								  mutate(
+								   Difference = Object - `Non-Object`) %>%
+								  gather(condition, amplitude,
+								  	-Time, -Subject) %>%
+								  mutate(
+								    effectType = factor(if_else(
+								      condition == "Difference", "Difference",
+									  "Main"
+								    )),
+								    condition = factor(
+								      condition,
+								      levels = c("Object", "Non-Object",
+									  	"Difference"),
+								      labels = c("Object", "Non-Object",
+									  	"Difference")
+								    )
+								  )
+
+								dataset$Subject <- factor(dataset$Subject)
+								dataset$condition <- factor(dataset$condition)
+
+
+								graph_setup <- ggplot(data = dataset,
+										      aes(Time, amplitude)) +
+								  list(
+								    scale_color_brewer(palette = "Set1"),
+								    theme_minimal(),
+								    stat_summary(
+								      data = dataset,
+								      fun = mean,
+								      geom = "line",
+								      size = 1,
+								      aes(colour = condition)
+								    ),
+								    scale_colour_discrete(
+									  limits = levels(dataset$condition)),
+								    labs(
+									  x = "Time (ms)",
+									  y = expression(paste(
+									    "Amplitude (",mu,"V)")),
+									  colour = ""),
+								    geom_vline(xintercept = 0,
+									  linetype = "dashed" ),
+								    geom_hline(yintercept = 0,
+									  linetype = "dashed"),
+								    theme(
+									 axis.text = element_text(size = 14),
+									 axis.title = element_text(size = 14),
+									 legend.text = element_text(size=14))
+								  )
+							</code></pre>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<div class='main-font'>Aim: Add choices</div>
+						<img src='img/add_choices.png'/>
+					</section>
+					<section>
+						<div class='main-font'>Given</div>
+						<div class='stretch-box'>
+							<pre title='ui.R'><code class="hljs r" data-trim contenteditable>
+								fluidPage(
+								  sliderInput("timeRange",
+								    label = "Time range to plot",
+								    min = -199,
+								    max = 598,
+								    value = c(-100, 400)),
+								  plotOutput("main_plot"))
+							</code></pre>
+							<pre title='server.R'><code class="hljs r" data-trim contenteditable>
+								# tidyverse is already loaded for you
+								library(tidyverse)
+
+								# imports data and helper functions
+								source("setup_helper.R")
+
+								function(input, output){
+								  output$main_plot <- renderPlot({
+
+								    # This line calls ggplot(data, aes) and
+								    # other helper functions for plotting
+								    graph_setup +
+
+								      coord_cartesian(
+									    xlim = c(input$timeRange[1],
+										  input$timeRange[2]))
+								    })
+								  }
+
+							</code></pre>
+							<pre title='setup_helper.R'><code class="hljs r" data-trim contenteditable>
+								# The dataset and most of this code are taken from https://github.com/craddm/ERPdemo/blob/master/ERPdemo/app.R
+								# You won't have to make any changes to this script
+
+								dataset <- read_csv(
+								  "https://raw.githubusercontent.com/craddm/ERPdemo/master/ERPdemo/data/levCatObjNon.csv",
+								  c("Object", "Non-Object",
+								    "Time", "Subject")) %>%
+								  mutate(
+								   Difference = Object - `Non-Object`) %>%
+								  gather(condition, amplitude,
+								  	-Time, -Subject) %>%
+								  mutate(
+								    effectType = factor(if_else(
+								      condition == "Difference", "Difference",
+									  "Main"
+								    )),
+								    condition = factor(
+								      condition,
+								      levels = c("Object", "Non-Object",
+									  	"Difference"),
+								      labels = c("Object", "Non-Object",
+									  	"Difference")
+								    )
+								  )
+
+								dataset$Subject <- factor(dataset$Subject)
+								dataset$condition <- factor(dataset$condition)
+
+
+								graph_setup <- ggplot(data = dataset,
+										      aes(Time, amplitude)) +
+								  list(
+								    scale_color_brewer(palette = "Set1"),
+								    theme_minimal(),
+								    stat_summary(
+								      data = dataset,
+								      fun = mean,
+								      geom = "line",
+								      size = 1,
+								      aes(colour = condition)
+								    ),
+								    scale_colour_discrete(
+									  limits = levels(dataset$condition)),
+								    labs(
+									  x = "Time (ms)",
+									  y = expression(paste(
+									    "Amplitude (",mu,"V)")),
+									  colour = ""),
+								    geom_vline(xintercept = 0,
+									  linetype = "dashed" ),
+								    geom_hline(yintercept = 0,
+									  linetype = "dashed"),
+								    theme(
+									 axis.text = element_text(size = 14),
+									 axis.title = element_text(size = 14),
+									 legend.text = element_text(size=14))
+								  )
+								  add_check_boxes <- function(myval){
+								    if (is.null(myval) == FALSE){
+								      list(
+								        geom_line(
+									  data = filter(dataset,
+									                effectType %in% myval),
+								          aes(group = interaction(
+										  Subject, condition),
+								            colour = condition,
+								            alpha = 0.2
+								          )),
+								        guides(alpha = "none")
+								      )
+								    }
+								  }
+							</code></pre>
+						</div>
+					</section>
+					<section>
+						<div class='main-font'>Solution</div>
+						<div class='stretch-box'>
+							<pre title='ui.R'><code class="hljs r" data-trim contenteditable>
+								fluidPage(
+								  titlePanel("Exploring ERP plot options"),
+
+								  sidebarLayout(
+								    sidebarPanel(
+								      sliderInput("timeRange",
+								        label = "Time range to plot",
+								        min = -199,
+										max = 598,
+										value = c(-100, 400)),
+
+								      checkboxGroupInput(
+								        "indivEffects",
+								        label = h4("Individual effects"),
+								        choices = list("Main effects" = "Main",
+								          "Difference waves" = "Difference"),
+								        inline = TRUE
+								      )
+								    ),
+								    mainPanel(
+								      plotOutput("main_plot")
+								    )
+								  )
+								)
+
+							</code></pre>
+							<pre title='server.R'><code class="hljs r" data-trim contenteditable>
+
+								# tidyverse is already loaded for you
+								library(tidyverse)
+
+								# imports data and helper functions
+								source("setup_helper.R")
+
+								function(input, output){
+								  output$main_plot <- renderPlot({
+
+								    # This line calls ggplot(data, aes) and
+								    # other helper functions for plotting
+								    graph_setup +
+
+								      coord_cartesian(
+									    xlim = c(input$timeRange[1],
+										  input$timeRange[2])) +
+									add_check_boxes(input$indivEffects)
+								    })
+								  }
+							</code></pre>
+							<pre title='setup_helper.R'><code class="hljs r" data-trim contenteditable>
+
+								# The dataset and most of this code are taken from https://github.com/craddm/ERPdemo/blob/master/ERPdemo/app.R
+								# You won't have to make any changes to this script
+
+								dataset <- read_csv(
+								  "https://raw.githubusercontent.com/craddm/ERPdemo/master/ERPdemo/data/levCatObjNon.csv",
+								  c("Object", "Non-Object",
+									"Time", "Subject")) %>%
+								  mutate(
+								   Difference = Object - `Non-Object`) %>%
+								  gather(condition, amplitude,
+									-Time, -Subject) %>%
+								  mutate(
+								   effectType = factor(if_else(
+								     condition == "Difference", "Difference",
+								       "Main"
+								    )),
+									condition = factor(
+									  condition,
+									  levels = c("Object", "Non-Object",
+										"Difference"),
+									  labels = c("Object", "Non-Object",
+										"Difference")
+									)
+								  )
+
+								dataset$Subject <- factor(dataset$Subject)
+								dataset$condition <- factor(dataset$condition)
+
+
+								graph_setup <- ggplot(data = dataset,
+											  aes(Time, amplitude)) +
+								  list(
+									scale_color_brewer(palette = "Set1"),
+									theme_minimal(),
+									stat_summary(
+									  data = dataset,
+									  fun = mean,
+									  geom = "line",
+									  size = 1,
+									  aes(colour = condition)
+									),
+									scale_colour_discrete(
+									  limits = levels(dataset$condition)),
+									labs(
+									  x = "Time (ms)",
+									  y = expression(paste(
+										"Amplitude (",mu,"V)")),
+									  colour = ""),
+									geom_vline(xintercept = 0,
+									  linetype = "dashed" ),
+									geom_hline(yintercept = 0,
+									  linetype = "dashed"),
+									theme(
+									 axis.text = element_text(size = 14),
+									 axis.title = element_text(size = 14),
+									 legend.text = element_text(size=14))
+								  )
+
+								  add_check_boxes <- function(myval){
+								    if (is.null(myval) == FALSE){
+								      list(
+								        geom_line(
+									  data = filter(dataset,
+									                effectType %in% myval),
+								          aes(group = interaction(
+										  Subject, condition),
+								            colour = condition,
+								            alpha = 0.2
+								          )),
+								        guides(alpha = "none")
+								      )
+								    }
+								  }
+							</code></pre>
+						</div>
+					</section>
+				</section>
+				<section>
+					<section>
+						<div class="left-container">
+							<div class='main-left'>
+								Downsides?
+							</div>
+							<div class='sub-left'>
+								View count<br/>Speed<br/>Flexibility
+							</div>
+						</div>
+						<div class="pic-format">
+							<img src='img/mailbox.gif'/>
+						</div>
+					</section>
+					<section data-background-iframe="https://www.shinyapps.io/#pricing"
+					data-background-interactive>
+						<div class="overlaid-block" style="width: 40%; top: 200px; right: 0;">
+							<p>But the app can be downloaded via Github and run locally for unlimited time</h2>
+						</div>
+						<div class='overlaid-url'>
+							shinyapps.io/#pricing
+						</div>
+					</section>
+					<section>
+						<div class='main-font' style="font-size: 40px; margin-bottom:40px;">
+							Can always embed a lot of html/css/javascript
+						</div>
+						<div class='a-container'>
+							<iframe src="https://ceefluz.shinyapps.io/radar/_w_38fd0d0b/" width='500' height="500"></iframe>
+							<iframe src="https://www.onlinetool.io/gitoembed/widget?url=https%3A%2F%2Fgithub.com%2Fceefluz%2Fradar%2Fblob%2Fmaster%2Fwww%2Fradar_style.css"  width='500' height="500"></iframe>
+						</div>
+						<div class='overlaid-url' style='right: 1050px;'>
+							ceefluz.shinyapps.io/radar/_w_38fd0d0b/
+						</div>
+						<div class='overlaid-url'>
+							github.com/ceefluz/radar/blob/master/www/radar_style.css
+						</div>
+					</section>
+				</section>
+				<section data-background-iframe="https://craddm.shinyapps.io/ERPdemo/"
+				data-background-interactive>
+					<div class='overlaid-block' style="width: 25%; top: 500px; right: 200px; padding: 10px; text-align: center;">
+						<p>Putting it all together</p>
+					</div>
+					<div class='overlaid-url'>
+						craddm.shinyapps.io/ERPdemo/
+					</div>
+				</section>
+				<section>
+					<div class="left-container">
+						<div class='main-left'>
+							Ta da
+						</div>
+						<div class='sub-left' style='text-align: left;'>
+							Special thanks to <a href="https://www.mattcraddock.com/" target="_blank">Dr. Matthew Craddock</a>, who permitted the re-use of <a href='https://github.com/craddm/ERPdemo' target="_blank">his data and analyses</a>
+						</div>
+						<div style="padding: 150px; text-align: left;">
+							<a href='https://github.com/jackdolgin/jackdolgin.github.io/blob/master/presentations/intro-to-shiny.html' target='_blank'>
+								<img src="img/github_logo.svg" style="width:25px; height:25px; box-shadow: none !important;"/>
+								<span style='font-size:25px; text-align: left; vertical-align: text-top;'>
+									Presentation code
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="pic-format">
+						<img src='img/approval.gif'/>
+					</div>
+				</section>
+				<section>
+					<div class='left-container'>
+						<div class="main-left">
+							Shiny Resources
+						</div>
+						<div class='sub-left'>
+							<p><a href='https://mastering-shiny.org/' target="_blank">Hadley Wickham's "Mastering Shiny"</a></p>
+							<p><a href='https://grabear.github.io/awesome-rshiny/' target="_blank">Compilation of Shiny app resources</a><p>
+						</div>
+					</div>
+					<div class="pic-format">
+						<iframe src="https://grabear.github.io/awesome-rshiny/"  width='800' height="400"></iframe>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				dependencies: [
+					{ src: 'reveal.js/plugin/markdown/marked.js' },
+					{ src: 'reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'reveal.js/plugin/highlight/highlight.js' },
+					{ src: 'reveal.js/plugin/notes/notes.js', async: true }
+				],
+				width: "90%",
+				slideNumber: true,
+				controlsTutorial: false,
+				preloadIframes: true
+			});
+		</script>
+	</body>
+</html>

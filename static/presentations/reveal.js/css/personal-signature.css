@@ -1,0 +1,138 @@
+
+body {
+    background-color: #FFF5F2;
+}
+
+div.reveal > div.slides {
+    border-top: 3px solid #453758;
+    border-bottom: 3px solid #453758;
+    color: #5B516B;
+    font-family: "Graphik", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main-left {
+    font-size: 60px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sub-left {
+    clear: both;
+    color: #8AABB9;
+    font-size: 25px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.reveal section img {
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.left-container {
+    width: 55%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.pic-format {
+    width: 45%;
+    float:right;
+}
+
+.main-font {
+    font-size: 70px;
+    color: #195C70;
+}
+
+.stretch-box {
+    display: flex;
+    align-items: stretch;
+vertical-align: 
+}
+
+.a-container {
+    display: flex;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+}
+
+.reveal .a-container img {
+    width: 300px;
+    height: 150px;
+    border: 0px;
+    box-shadow: none !important;
+}
+
+.overlaid-block {
+    position: absolute;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    font-size: 20px;
+    text-transform: none;
+    font-weight: normal;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.overlaid-url {
+    position: absolute;
+    font-size: 8px;
+    right: 20px;
+    top: 702px;
+    text-transform: none;
+}
+
+
+/* The below code is mostly taken from https://github.com/sebdesign/laravel-package-development-presentation/blob/master/css/theme/laravel.css */
+
+.reveal code {
+  background-color: #3c3138;
+  color: #c1b2b2;
+  border-radius: 3px;
+  display: inline-block;
+  font-family: 'Monaco', 'Menlo', 'Consolas', 'DejaVu Sans Mono', monospace;
+  padding-left: .4em;
+  padding-right: .4em;
+}
+
+.reveal pre {
+  font-size: .3em;
+  line-height: 1.7;
+  font-weight: normal;
+  align-items: flex-end;
+  width: 30%;
+}
+
+.reveal pre::before {
+    background-color: #d8d8da;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    color: #8c95a6;
+    content: "•••   " attr(title) ;
+    text-transform: none;
+    display: block;
+    font-size: 1em;
+    line-height: 1.2;
+    text-indent: .5em;
+    width: 100%;
+}
+
+.reveal pre code {
+    background-color: #282c34;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin: 10;
+    height: 600px;
+    padding: 10px 15px;
+}
