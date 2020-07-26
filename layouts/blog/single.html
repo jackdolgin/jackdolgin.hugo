@@ -9,9 +9,12 @@
   <aline id="nav" class="nav justify-content-center">
   </aline>
 </div>
-
-<br><br>
+{{ partial "footnotes.html" . }}
+<br>
 <h2>Post Tags</h2>
 {{ partial "tags-only.html" . }}
+<br><br><br>
+<h2>Comments</h2>
+{{ partial "utterances.html" . }}
 
 {{ end }}
