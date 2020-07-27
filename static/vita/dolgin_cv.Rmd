@@ -140,7 +140,7 @@ header-includes:
                                                         \\
                                                         & \textbf{Non-Refereed}
                                                         \\
-                                                        & \textbf{Dolgin, J.} (2020, April). \href{\websiteURL \presentationExtension intro-to-shiny.html}{An introduction to Shiny apps}. Workshop delivered by J.D. at the Duke Center for Cognitive Neuroscience Journal Club, virtually.
+                                                        & \textbf{Dolgin, J.} (2020, April). \href{\websiteURL /intro-to-shiny}{An introduction to Shiny apps}. Workshop delivered by J.D. at the Duke Center for Cognitive Neuroscience Journal Club, virtually.
                                                         \\
                                                         & Zhang, Z., Bejjani, C., Chiu, Y.C., \textbf{Dolgin, J.}, and Egner, T. (2019, July). \href{\websiteURL \presentationExtension 2019pr_ZhangBejjaniChiuDolginEgner.pdf}{Neural evidence of control state reinstatement: an fMRI study}. Poster presented by Z.Z. at the Duke Summer Undergraduate Research Showcase, Durham, NC.
                                                         \\

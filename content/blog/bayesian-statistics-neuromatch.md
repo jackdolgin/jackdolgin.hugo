@@ -2,7 +2,7 @@
 title: Recapping Bayesian Statistics walkthrough from Neuromatch Academy
 date: 2020-07-26
 tags: ["explainer", "bayesian", "statistics", "neuromatch"]
-draft: false
+draft: true
 summary: This post is going to walk through tutorials 1-3 on week 2, day 1 of Neuromatch Academy.
 ---
 
