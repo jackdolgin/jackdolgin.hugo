@@ -54,6 +54,8 @@ summaryLength = 50
   footerText = ""
   hideFooter = true
 
+[Social]
+  twitter = "jbdolg"
 
 [params.googleApiFonts.family]
   tagsText        = [ "html", "body", "time" ]

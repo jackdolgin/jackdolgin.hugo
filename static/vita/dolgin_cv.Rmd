@@ -12,7 +12,8 @@ header-includes:
   \newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
   \renewcommand{\headrulewidth}{0pt}
   \pagestyle{fancy}
-  \fancyfoot[LE,RO]{\ifthenelse{\value{page}=1}{\monthyeardate\today}{\pagestyle{empty}}}
+  \fancyfoot[LE,RO]{\ifthenelse{\value{page}=1}{\monthyeardate\today}{\ifthenelse{\value{page}<4}{*Denotes equal contribution}{\pagestyle{empty}}}}
+  
   
 ---
 
@@ -40,7 +41,7 @@ header-includes:
 {>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.6\textwidth} >{\raggedleft\arraybackslash}p{.25\textwidth}}
           & \begingroup\MyName \fontsize{20}{10} \selectfont Jack Dolgin \endgroup  &
           \\
-          & Somers Family Hall 1125                                                 & \href{https://twitter.com/jbdolg}{@jbdolg}
+          & Somers Family Hall, CB 1125                                             & \href{https://twitter.com/jbdolg}{@jbdolg}
           \\
           & 1 Brookings Drive                                                       & \href{mailto:jdolgin@wustl.edu}{jdolgin@wustl.edu}
           \\
@@ -140,6 +141,8 @@ header-includes:
                                                         \\
                                                         & \textbf{Non-Refereed}
                                                         \\
+                                                        & Motala, A.*, \textbf{Dolgin, J.*}, Yanes, J.A.*, Jiang, L.*, and Koiler, R.* \href{https://docs.google.com/presentation/d/1devhqTA4ozeuGB1CRPooLUnAve3cxeLCzwk3PvFxzL0}{Functional Connectivity Gradient of human fMRI data}. Talk presented by A.M., J.D., J.A.Y., L.J, and R.K. at the 1st annual Neuromatch Academy, virtually.
+                                                        \\
                                                         & \textbf{Dolgin, J.} (2020, April). \href{\websiteURL /intro-to-shiny}{An introduction to Shiny apps}. Workshop delivered by J.D. at the Duke Center for Cognitive Neuroscience Journal Club, virtually.
                                                         \\
                                                         & Zhang, Z., Bejjani, C., Chiu, Y.C., \textbf{Dolgin, J.}, and Egner, T. (2019, July). \href{\websiteURL \presentationExtension 2019pr_ZhangBejjaniChiuDolginEgner.pdf}{Neural evidence of control state reinstatement: an fMRI study}. Poster presented by Z.Z. at the Duke Summer Undergraduate Research Showcase, Durham, NC.
@@ -156,9 +159,11 @@ header-includes:
 
 \begin{longtable}
 {>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.35\textwidth} >{\raggedright\arraybackslash}p{0.45\textwidth}}
-\begingroup\sectitle SIDE PROJECTS\endgroup  & \textbf{Dolgin, J.}, Whitehead, P.S., Vieth, A.Z. (In Preparation). NCAA women’s basketball reveals men as more verbally aggressive. & Foray into 50,000 basketball games with web-scraping—finishing a project idea I had to propose for Dr. Vieth’s class as an undergraduate—to complete the first observational study in adults to date on differences in verbal aggression between genders.
+\begingroup\sectitle SIDE PROJECTS\endgroup  & \href{https://meta-meta-resources.org}{Meta-Meta-Resources.org} & I created an editable collection of free and open source resources for doing cognitive neuroscience research. They include free learning resources, links to research directories, and collections of free study stimuli, to name just a few. It logged more than 2,000 visits in its first week.
                                              \\
-                                             & Butchireddygari, L., \textbf{Dolgin, J.} (2018). \href{https://www.dukechronicle.com/article/2018/01/is-greek-life-at-duke-as-homogenous-as-you-think}{Is Greek life at Duke as homogeneous as you think?} Duke Chronicle.                  & My coauthor and I collected over 30 variables on all 1,700 students in Duke’s class of 2018 to analyze trends in the demographics of members of Greek life, and we posted all our publicly-collected data to a repository and I analyzed it in an interactive \href{https://jackdolgin.shinyapps.io/GreekLifeDemographics/}{Shiny app}.
+                                             & \textbf{Dolgin, J.}, Whitehead, P.S., Vieth, A.Z. (In Preparation). NCAA women’s basketball reveals men as more verbally aggressive. & Foray into 50,000 basketball games with web-scraping—finishing a project idea I had to propose for Dr. Vieth’s class as an undergraduate—to complete the first observational study in adults to date on differences in verbal aggression between genders.
+                                             \\
+                                             & Butchireddygari, L.*, \textbf{Dolgin, J.*} (2018). \href{https://www.dukechronicle.com/article/2018/01/is-greek-life-at-duke-as-homogenous-as-you-think}{Is Greek life at Duke as homogeneous as you think?} Duke Chronicle.                  & My coauthor and I collected over 30 variables on all 1,700 students in Duke’s class of 2018 to analyze trends in the demographics of members of Greek life, and we posted all our publicly-collected data to a repository and I analyzed it in an interactive \href{https://jackdolgin.shinyapps.io/GreekLifeDemographics/}{Shiny app}.
                                             \\
                                             & \textbf{Dolgin, J.} (2017). \href{http://dewitt.sanford.duke.edu/wp-content/uploads/2017/02/Dolgin-blog-This-week-in-Duke-History.pdf}{This Week in Duke Sports History}. Duke Chronicle.
                                             & My work documenting a zany fact in Duke sports history for an entire year was a finalist in Duke’s annual award for a journalism project or article across all of Duke’s undergraduates, including journalism certificate students and the rest of the school.
@@ -172,6 +177,14 @@ header-includes:
 \begingroup\sectitle OTHER EXPERIENCES\endgroup  & 2019 -  & \href{https://www.techgirlz.org/}{TechGirlz} \newline Volunteer & Develop Python and R curricula that I and others in the organization teach to middle school girls.                                                                
                                                   \\
                                                   & 2014 - 2018  & \href{https://www.dukechronicle.com/search?a=1&au=Jack+Dolgin&ty=article}{Duke Chronicle} \newline Associate Editor & Wrote over 200 articles for the Duke student paper. I edited others’ writing, performed \href{https://www.dukechronicle.com/article/2017/04/school-vs-sports-which-really-comes-first-for-duke-athletes}{three} \href{https://www.dukechronicle.com/article/2018/01/is-greek-life-at-duke-as-homogenous-as-you-think}{data-driven} \href{https://www.dukechronicle.com/article/2018/05/are-slgs-as-diverse-as-you-think}{investigations}, covered events in 11 states, \href{https://www.dukechronicle.com/multimedia/314d8ec3-5a4c-4d22-8852-2b1e196a366b}{took} \href{https://www.dukechronicle.com/multimedia/b9c1c8cd-dc3d-4093-bfa2-0935b7d92e8c}{photos} \href{https://www.dukechronicle.com/multimedia/6dbc6250-e44c-47a0-9590-55d3245b3c90}{of} \href{https://www.dukechronicle.com/multimedia/80a554ad-1989-4fe8-a355-056560c662a3}{a} \href{https://www.dukechronicle.com/multimedia/c28b0808-3a6c-42e1-8230-e6b96dcacf33}{Trump} \href{https://www.dukechronicle.com/multimedia/c28b0808-3a6c-42e1-8230-e6b96dcacf33}{rally} \href{https://www.dukechronicle.com/multimedia/47ef3ad6-1d74-47a3-b89a-57fa6122f3b7}{the} \href{https://www.dukechronicle.com/multimedia/d1083abc-8a08-4f49-afe3-f08d91cbf53d}{day} \href{https://www.dukechronicle.com/multimedia/bdc055ca-1ee5-4190-903d-d7c5e9e4f8c6}{before} \href{https://www.dukechronicle.com/multimedia/342f3393-0f81-4cae-9100-84b976f973d6}{the} \href{https://www.dukechronicle.com/multimedia/0d29f279-568c-4e33-9260-4c4f321598cb}{election}, \href{https://www.dukechronicle.com/article/2017/10/pinning-opponents-inside-the-20-yard-line-its-harder-than-it-looks}{produced} \href{https://www.dukechronicle.com/article/2017/09/they-call-themselves-ultras-look-like-crazies}{videos}, and received the Rolly C. Miller award for ``exhibit[ing] a warmth and collegiality that brings the staff closer together."
+\end{longtable}
+
+
+
+
+\begin{longtable}
+{>{\raggedleft\arraybackslash}p{\HeadSpace} >{\raggedright\arraybackslash}p{0.11\textwidth} >{\raggedright\arraybackslash}p{0.6\textwidth} >{\raggedright\arraybackslash}p{0.15\textwidth}}
+\begingroup\sectitle MENTORING\endgroup  & 2020 -  & Melodey Soong (undergraduate)  &
 \end{longtable}
 
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.5.25)  27 JUL 2020 00:07
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.5.25)  8 SEP 2020 22:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1322,7 +1322,10 @@ Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
 Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
 
 
-Overfull \hbox (0.25471pt too wide) in alignment at lines 169--191
+Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
+
+
+Overfull \hbox (0.25471pt too wide) in alignment at lines 169--193
  [] [] 
  []
 
@@ -1337,7 +1340,10 @@ Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
 Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
 
 
-Overfull \hbox (12.25471pt too wide) in alignment at lines 194--201
+Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
+
+
+Overfull \hbox (12.25471pt too wide) in alignment at lines 196--205
  [] [] [] 
  []
 
@@ -1396,7 +1402,21 @@ Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
 Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
 
 
-Overfull \hbox (10.00899pt too wide) in alignment at lines 204--208
+Overfull \hbox (10.00899pt too wide) in alignment at lines 208--212
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (52.74611pt too wide) in alignment at lines 215--217
+ [] [] [] [] 
+ []
+
+[3]
+
+Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
+
+
+Overfull \hbox (24.2547pt too wide) in alignment at lines 220--222
  [] [] [] [] 
  []
 
@@ -1404,11 +1424,6 @@ Overfull \hbox (10.00899pt too wide) in alignment at lines 204--208
 Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
 
 
-Overfull \hbox (24.2547pt too wide) in alignment at lines 211--213
- [] [] [] [] 
- []
-
-
 Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
 
 
@@ -1421,30 +1436,27 @@ Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
 Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
 
 
-Package fontspec Info: Adobe Garamond Pro scale = 1.093899222734719.
-
-
-Overfull \hbox (0.25471pt too wide) in alignment at lines 216--218
+Overfull \hbox (0.25471pt too wide) in alignment at lines 225--227
  [] [] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
-[3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
 (./dolgin_cv.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 220.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 229.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
 Package rerunfilecheck Info: File `dolgin_cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
  ) 
 Here is how much of TeX's memory you used:
- 18118 strings out of 481274
- 323490 string characters out of 5921294
- 748292 words of memory out of 5000000
- 35372 multiletter control sequences out of 15000+600000
+ 18119 strings out of 481274
+ 323496 string characters out of 5921294
+ 749488 words of memory out of 5000000
+ 35373 multiletter control sequences out of 15000+600000
  533262 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  53i,11n,121p,2071b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on dolgin_cv.pdf (3 pages).
+Output written on dolgin_cv.pdf (4 pages).
